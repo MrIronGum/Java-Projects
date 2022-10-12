@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Add Dancer"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="controljPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="titlejPanel" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Component id="displayjPanel" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="titlejPanel" min="-2" pref="106" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="displayjPanel" min="-2" pref="242" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="controljPanel" pref="37" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="titlejPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="imagejLabel" min="-2" pref="146" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="titlejLabel" min="-2" pref="311" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="imagejLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="titlejLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="imagejLabel">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/cafedansadatabase/dancegroup1.jpg"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="titlejLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add New Dancer"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="displayjPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="2"/>
+        <Property name="horizontalGap" type="int" value="5"/>
+        <Property name="rows" type="int" value="6"/>
+        <Property name="verticalGap" type="int" value="5"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="namejLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Name of Dancer:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="namejTextField">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="namejTextFieldFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="namejTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="stylejLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Dance Style:"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="stylejComboBox">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="stylejComboBoxActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="leveljLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Level of Proficiency:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="leveljComboBox">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="stylejComboBoxFocusLost"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="yearsjLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Years of Dancing:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="yearsjTextField">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="yearsjTextFieldFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="yearsjTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="phonejLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Phone:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="phonejTextField">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="phonejTextFieldFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phonejTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="emailjLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Email:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="emailjTextField">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="emailjTextFieldFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailjTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="controljPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="2"/>
+        <Property name="horizontalGap" type="int" value="5"/>
+        <Property name="rows" type="int" value="1"/>
+        <Property name="verticalGap" type="int" value="5"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="savejButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="mnemonic" type="int" value="83"/>
+            <Property name="text" type="java.lang.String" value="Save"/>
+            <Property name="toolTipText" type="java.lang.String" value="Save new dancer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="stylejComboBoxFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="savejButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="canceljButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="mnemonic" type="int" value="67"/>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+            <Property name="toolTipText" type="java.lang.String" value="Dispose form"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="canceljButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

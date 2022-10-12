@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="dancersjMenuBar">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="filejMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+            <Property name="toolTipText" type="java.lang.String" value="File"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="newjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="New"/>
+                <Property name="toolTipText" type="java.lang.String" value="Open database of dancers"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newjMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="printjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Print Form"/>
+                <Property name="toolTipText" type="java.lang.String" value="Prints whole page as an image"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="printjMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="printdancerjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Print Dancer"/>
+                <Property name="toolTipText" type="java.lang.String" value="Prints detail of the dancer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="printdancerjMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="saveJMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Save"/>
+                <Property name="toolTipText" type="java.lang.String" value="Save "/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator3">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="exitjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Exit"/>
+                <Property name="toolTipText" type="java.lang.String" value="Exit"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="sortingjMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sort"/>
+            <Property name="toolTipText" type="java.lang.String" value="Sorting"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="namejRadioButtonMenuItem">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="By name"/>
+                <Property name="toolTipText" type="java.lang.String" value="Sorting by name"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="namejRadioButtonMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="yearsjRadioButtonMenuItem">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="By years"/>
+                <Property name="toolTipText" type="java.lang.String" value="Sorting by years"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="yearsjRadioButtonMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="dancerdatabasejMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dancer Database"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="addjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Add"/>
+                <Property name="toolTipText" type="java.lang.String" value="Add dancer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addjMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="editjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Edit"/>
+                <Property name="toolTipText" type="java.lang.String" value="Edit dancer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editjMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="deletejMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Delete"/>
+                <Property name="toolTipText" type="java.lang.String" value="Delete dancer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deletejMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="searchjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Search"/>
+                <Property name="toolTipText" type="java.lang.String" value="Search dancer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchjMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="detailsjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Details"/>
+                <Property name="toolTipText" type="java.lang.String" value="Look up the details"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpjMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Help"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="aboutjMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="About"/>
+                <Property name="toolTipText" type="java.lang.String" value="About form"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aboutjMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="dancersjMenuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="titlejPanel" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="controljPanel" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="listjPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="displayjPanel" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="titlejPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="listjPanel" min="-2" max="-2" attributes="0"/>
+                  <Component id="displayjPanel" min="-2" pref="272" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="controljPanel" pref="40" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="titlejPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="15" max="32767" attributes="0"/>
+                  <Component id="imagesecondjLabel" min="-2" pref="145" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="titlejLabel" min="-2" pref="326" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="imagefirstjLabel" min="-2" pref="161" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="imagefirstjLabel" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="titlejLabel" alignment="0" max="32767" attributes="0"/>
+                              <Component id="imagesecondjLabel" alignment="1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="imagefirstjLabel">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/cafedansadatabase/dancegroup2.jpg"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="imagesecondjLabel">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/cafedansadatabase/dancegroup1.jpg"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="titlejLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="30" style="2"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Caf&#xe8; Dansa Database"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="listjPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="listjScrollPane" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="listjScrollPane" min="-2" pref="267" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="listjScrollPane">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JList" name="dancersjList">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="3"/>
+                </Property>
+                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+                <Property name="fixedCellWidth" type="int" value="250"/>
+              </Properties>
+              <Events>
+                <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="dancersjListValueChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="displayjPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="2"/>
+        <Property name="horizontalGap" type="int" value="5"/>
+        <Property name="rows" type="int" value="6"/>
+        <Property name="verticalGap" type="int" value="5"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="namejLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Name of Dancer:"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="namejTextField">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="namejTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="stylejLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Dance Style:"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="stylejTextField">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="stylejTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="leveljLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Level of Proficiency:"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="leveljTextField">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="leveljTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="yearsjLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Years of Dancing:"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="yearsjTextField">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="yearsjTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="phonejLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Phone:"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="phonejTextField">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phonejTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="emailjLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="11"/>
+            <Property name="text" type="java.lang.String" value="Email:"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="emailjTextField">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="3"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailjTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="controljPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="5"/>
+        <Property name="horizontalGap" type="int" value="5"/>
+        <Property name="rows" type="int" value="1"/>
+        <Property name="verticalGap" type="int" value="5"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="addjButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add"/>
+            <Property name="toolTipText" type="java.lang.String" value="Add dancer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addjButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="editjButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+            <Property name="toolTipText" type="java.lang.String" value="Edit dancer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editjButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="deletejButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Delete"/>
+            <Property name="toolTipText" type="java.lang.String" value="Delete dancer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deletejButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="exitjButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Exit"/>
+            <Property name="toolTipText" type="java.lang.String" value="Exit"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitjButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

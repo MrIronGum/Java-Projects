@@ -1,0 +1,9 @@
+Mikhail Baryshnikov,ballet,expert,50,235-897-3748,mishabarysh@mail.ru
+Sammy Davis,tap dancing,advanced,48, 374-129-3292,sammyjr@gmail.com
+Gregory Hines,tap dancing,advanced,20,859-281-1947,greghines@usa.com
+Margot Fonteyn,ballet,master,35,120-128-2389,margofon@gmail.com
+Isadora Duncan,modern dance,master,27,123-174-3791,isaduncan@dance.com
+Gillian Murphy,ballet,master,21,121-393-1929,gilmurph@ballet.com
+Patrick Swayze,modern dance,intermediate,10,281-284-1289,patrick@gmail.com
+Gene Kelly,modern dance,intermediate,15,283-123-1232,genekelly@gmail.com
+Martha Graham,modern dance,expert,40,123-165-1745,grahammartha@dance.com

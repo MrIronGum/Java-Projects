@@ -1,0 +1,17 @@
+Vaslav Nijinsky,ballet,master,40,206-675-1280,nijinsky@ballet.net
+Fredie Astaire,ballroom,master,36,310-387-4499,astaire@ballet.net
+Anna Pavlova,ballet,expert,32,425-125-9874,ana.pavlova@dance.com
+Michael Ryan Flatley,irish step dancing,intemediate,30,254-113-6457,flastley@irish.com
+Mikhail Baryshnikov,ballet,intermediate,28,707-945-7765,baryshnikov@ballet.com
+Sammy Davis,tap,expert,27,909-123-6578,davis@pop.com
+Luara Como Lino,samba,advanced,18,452-257-6733,nijinsky@ballet.com
+Rags Sharqi,baladi,advanced,14,684-131-3210,rags.sharqi@baladi.com
+Gene Kelly,ballroom,beginner,12,707-945-7765,kelly@ballroom.com
+Michael Jackson,modern pop,advanced,9,303-313-5455,michael@pop.com
+Kahte Culevski,balkan,advanced,8,321-741-3771,kculevski@balkanbeat.net
+Thomas Kercheval,firedancing,advanced,6,[206]227.5464,thomas.kercheval@email.net
+Magan Gopal,salsa,intemediate,6,206-675-1280,gopal@salsa.com
+Cherie Magnus,milonga,beginner,5,206-675-1280,magus@milonga.com
+Sukshinder Shinda,bhangra,beginner,2,661-038-9512,sshinda@bhangra.com
+Youmna Horre,baladi,beginner,2,425-866-7578,youmnahorre@gmail.com
+NIcko Culevski,baladi,expert,41,302-234-2342,nickoculevski@gmail.com
