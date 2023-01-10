@@ -9,13 +9,15 @@ public class LetterInventory{
         //initializing the data array 
         elementData = new int[ALPHABET_SIZE];
         data = data.toLowerCase();
+        size = 0;
         // counts letters and writes them into array
         for (int i = 0; i < data.length(); i++){
             if(Character.isLetter(data.charAt(i))){
                 elementData[data.charAt(i) - 'a']++;
+                size++;
             }
-            size++;
         }
+
     }
 
     // return the total number of characters in the inventory
@@ -35,12 +37,16 @@ public class LetterInventory{
 
     //Returns a count of how many of this letter are in the inventory. Letter might be lowercase or uppercase
     // checks if the letter argument is a non-alphabetic character, if it's then throws exception 
+    // checks if index in a right interval, if not throws an exception
     public int get(char letter){
          if(!Character.isLetter(letter)){
             throw new IllegalArgumentException("The invalid letter: " + letter);
          }
          int index = Character.toLowerCase(letter) - 'a';
-         return index;
+         if(index < 0 || index >= ALPHABET_SIZE){
+            throw new IllegalArgumentException("The invalid letter: " + letter);
+         }
+         return elementData[index];
     }
 
     public String toString() {
